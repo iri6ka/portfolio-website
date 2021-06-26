@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaBars} from 'react-icons/fa';
+import {HiMenuAlt4} from "react-icons/hi";
 import {
     Nav, 
     NavbarContainer, 
@@ -19,7 +19,7 @@ const Navbar = () => {
                 <NavbarContainer>
                     <NavLogo to='/'>Irina Konnova</NavLogo>
                     <MobileIcon>
-                        <FaBars />
+                        <HiMenuAlt4 />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
