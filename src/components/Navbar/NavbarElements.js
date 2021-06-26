@@ -35,12 +35,14 @@ export const NavLogo = styled(LinkRouter)`
     align-items: center;
     font-weight: bold;
     margin-left: 24px;
+    font-family: 'Ruda', sans-serif;
+
     text-decoration: none;
     color: #000;
     `
 export const MobileIcon = styled.div`
     display: none;
-    
+
     @media screen and (max-width: 768px){
         display: block;
         position: absolute;
@@ -76,7 +78,7 @@ export const NavLinks = styled(LinkScroll)`
     cursor: pointer;
     // margin: 20px;
     font-size: 1.5rem;
-    // font-family: 'Roboto', sans-serif;
+    font-family: 'Ruda', sans-serif;
     // margin-top: 20px;   
     
     &.active{
@@ -94,12 +96,14 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkRouter)`
     border-radius: 50px;
-    background: #01bf71;
+    background: #686FB9;
     white-space: nowrap;
     padding: 10px 22px;
-    color: #010606;
+    color: #fff;
     font-size: 16px;
     outline: none;
+    font-family: 'Ruda', sans-serif;
+
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -107,7 +111,7 @@ export const NavBtnLink = styled(LinkRouter)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606;
+        background:#fff;
+        color: #31366B;
     }
 `

@@ -8,7 +8,7 @@ export const SidebarContainer = styled.aside`
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #F4CFCF;
+    background: #020215;
     align-items: center;
     display: grid;
     top: 0;
@@ -35,7 +35,7 @@ export const Icon = styled.div`
 `
 
 export const SidebarWrapper = styled.div`
-    color: #fff;
+    color: #000;
 
 `
 
@@ -44,9 +44,9 @@ export const SidebarMenu = styled.ul`
     drid-template-columns: 1fr;
     grid-template-rows: repeat(6, 15px);
     text-align: center;
-    padding-right: 40px;
+    padding-right: 45px;
     @media screen and (max-width: 480px){
-        grid-template-rows: repeat(6,60px);
+        grid-template-rows: repeat(6,15px);
     }
     `
 export const SidebarLink = styled(LinkScroll)`
@@ -56,12 +56,13 @@ export const SidebarLink = styled(LinkScroll)`
     font-size: 1.5rem;
     text-decoration: none;
     list-style: none;
+    font-family: 'Ruda', sans-serif;
     transition: 0.2s ease-in-out;
     text-decoration: none;
-    color: #73676A;
+    color: #686FB9;
     cursor: pointer;
     &:hover {
-        color: #9F5D6D;
+        color: #fff;
         transition: 0.2s ease-in-out;
 }
 
@@ -74,20 +75,22 @@ export const SideBtnWrap = styled.div`
 
 export const SidebarRoute = styled(LinkRoute)`
     border-radius: 50px;
-    background: #F4CFCF;
+    background: #686FB9;
     write-space: nowrap;
     padding: 16px 64px;
-    color: #000;
+    color: #fff;
     font-size: 16px;
     outline: none;
     border: none;
+    font-family: 'Ruda', sans-serif;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+    font-weight: bold;
 
     &:hover{
         transition: all 0.2s ease-in0out;
         background:#fff;
-        color: #ddd;
+        color: #31366B;
     }
 `
