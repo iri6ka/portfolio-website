@@ -8101,6 +8101,11 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
+pathseg@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/pathseg/-/pathseg-1.2.0.tgz#22af051e28037671e7799e296fe96c5dcbe53acd"
+  integrity sha512-+pQS7lTaoVIXhaCW7R3Wd/165APzZHWzYVqe7dxzdupxQwebgpBaCmf0/XZwmoA/rkDq3qvzO0qv4d5oFVrBRw==
+
 pbkdf2@^3.0.3:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/pbkdf2/-/pbkdf2-3.1.1.tgz"
@@ -9178,6 +9183,13 @@ react-is@^17.0.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
+
+react-particles-js@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/react-particles-js/-/react-particles-js-3.5.1.tgz#856720297b7f2f22fa76cf8dac67a86c80ac4d53"
+  integrity sha512-CrJGA7karrKsnNeRgacW13s59PWrjnGg6mp7wPebA6zU4z/bMqRDdwpTn71fvYIJ0nCmJhAX5YeBcqDvut2Xfg==
+  dependencies:
+    lodash "^4.17.11"
 
 react-refresh@^0.8.3:
   version "0.8.3"
@@ -10821,6 +10833,13 @@ tslib@^2.0.3:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz"
   integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
+
+tsparticles@^1.29.2:
+  version "1.29.2"
+  resolved "https://registry.yarnpkg.com/tsparticles/-/tsparticles-1.29.2.tgz#cec1847001578bb79b0fa06c26557e98c37a0fc5"
+  integrity sha512-/oo9B9n0A8jd0uGGlYyhzcwQyoiX5Z4X3TFBzt98B8OxEen5vogLvyD7kCswFQDfiZXvcx8lgoLtJXm96flQ5w==
+  optionalDependencies:
+    pathseg "^1.2.0"
 
 tsutils@^3.17.1:
   version "3.20.0"
