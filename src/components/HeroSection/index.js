@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 // import Poster from '../../images/poster.png';
 import { HeroContainer, ParticleStyle, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
 import Particle from '../../components/Particle';
+import {Button} from '../ButtonElement'
 
 
 const HeroSection = () => {
