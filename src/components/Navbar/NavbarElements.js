@@ -8,7 +8,7 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-    background:#F4CFCF
+    background:#026670;
     font-size: 1rem;
     position: sticky;
     top: 0;
@@ -69,7 +69,7 @@ export const NavItem = styled.li`
     height: 60px;
 `
 export const NavLinks = styled(LinkScroll)`
-    color: #000;
+    color: #edeae5;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -82,7 +82,7 @@ export const NavLinks = styled(LinkScroll)`
     // margin-top: 20px;   
     
     &.active{
-        border-bottom: 3px solid #59363F;
+        border-bottom: 3px solid #9fedd7;
     }
 `
 export const NavBtn = styled.nav`
@@ -96,10 +96,11 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkRouter)`
     border-radius: 50px;
-    background: #686FB9;
+    background: #edeae5;
     white-space: nowrap;
     padding: 10px 22px;
-    color: #fff;
+    color: grey;
+    margin-right: 20px;
     font-size: 16px;
     outline: none;
     font-family: 'Ruda', sans-serif;
@@ -111,7 +112,8 @@ export const NavBtnLink = styled(LinkRouter)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background:#fff;
-        color: #31366B;
+        background:#FCE181;
+        color: #026670;
+        ;
     }
 `

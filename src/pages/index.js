@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Navbar from '../components/Navbar/index';
 import Sidebar from '../components/Sidebar/index';
+import HeroSection from '../components/HeroSection';
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
         <React.Fragment>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
+            <HeroSection />
         </React.Fragment>
     )
 }
