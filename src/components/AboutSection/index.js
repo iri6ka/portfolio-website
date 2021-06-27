@@ -2,7 +2,8 @@ import React from 'react';
 import { Button } from '../ButtonElements';
 import { AboutContainer, AboutWrapper, AboutRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img} from './AboutElements'
 
-const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, buttonLabel, img, alt, primary, dark, dark2}) => {
+
+const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) => {
     return (
         <>
            <AboutContainer lightBg={lightBg} id={id}>
@@ -10,9 +11,9 @@ const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headline, dark
                     <AboutRow imgStart={imgStart}>
                         <Column1>
                             <TextWrapper>
-                                <TopLine lightTexxt={lightText}>{topLine}</TopLine>
-                                <Heading darkText={darkText}>{headline}</Heading>
-                                <Subtitle>Subtitle</Subtitle>
+                                <TopLine>{topLine}</TopLine>
+                                <Heading lightText={lightText}>{headline}</Heading>
+                                <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <BtnWrap>
                                     <Button to="home" 
                                     smooth={true}

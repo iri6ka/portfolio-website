@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const AboutContainer = styled.div`
     color: #fff;
-    position: absolute;
+    position: relative;
     font-family: 'Ruda', sans-serif;
 
     background: ${({lightBg}) => (lightBg ? '#fff' : '#026670')};
@@ -93,7 +93,6 @@ justify-content: flex-start;
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%;
-
 `
 
 export const Img = styled.img`
