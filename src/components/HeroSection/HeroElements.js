@@ -4,6 +4,17 @@ import {FiChevronRight, FiChevronsRight} from 'react-icons/fi';
 export const HeroContainer = styled.main`
     display: flex;
     vertical-align: bottom;
+    
+
+    // :before{
+    //     content: '';
+    //     position: absolute;
+    //     top 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     background: linear-gradient(180deg, rbga(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%)
+    // }
     }
 
 `
@@ -22,11 +33,9 @@ export const HeroHeader = styled.header`
 
 
 export const ParticleStyle = styled.div`
-    position: absolute;
+    position: relative;
     width: 100%;
     // padding: 10px 22px;
-    left: 8px;
-    // right: 8px;
     height: 100%;
     background-color: #026670;
 
