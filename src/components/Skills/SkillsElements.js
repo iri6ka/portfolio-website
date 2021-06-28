@@ -1,22 +1,23 @@
 import styled from 'styled-components';
+import img from '../../images/background.png'
 
 // font-family: 'Ruda', sans-serif;
 
 export const SkillsContainer = styled.div`
-    height: 800px;
+    height: 890px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;r
-    background: #44637B;
-    background: ${({lightBg}) => (lightBg ? '#fff' : '#44637B')};
+    align-items: center;
+    background-image: url(${img});
     
     @media screen and (max-width: 768px) {
-        height: 1100px;
+        height: 1700px;
     }
 
     @media screen and (max-width: 480px){
-        max-width: 1300px;
+        max-width: 300px;
+        height: 2000px;
     }
 `
 
@@ -26,10 +27,10 @@ export const SkillsWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    grid-gap: 50px;
+    grid-gap: 16px;
     padding: 0 50px;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 800px) {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -47,10 +48,22 @@ export const SkillsCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    max-height: 340px;
+    height: 500px;
     padding: 30px;
     box-shadow: 0 1px 3px rbga(0,0,0,0.2);
     transition: all 0.2 ease-in-out;
+
+
+    @media screen and (max-width: 720px) {
+        width: 300px;
+        height: 450px;
+
+    }
+
+    @media screen and (max-width: 480px){
+        width: 200px;
+        height: 520px;
+    }
 
     &:hover {
         transform: scale(1.02);
@@ -67,9 +80,9 @@ export const Img= styled.img`
 
 
 export const SkillsH1 = styled.h1`
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-family: 'Ruda', sans-serif;
-    color: #DA7B93;
+    color: #fff;
     magrin-bottom: 64px;
 
     @media screen (max-width: 480px){
@@ -78,8 +91,10 @@ export const SkillsH1 = styled.h1`
 `;
 
 export const SkillsH2 = styled.h2`
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
+    text-align: center;
+
 
 `
 

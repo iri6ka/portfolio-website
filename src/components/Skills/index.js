@@ -23,17 +23,17 @@ const Skills = (lightBg) => {
                 <SkillsCard>
                     <Img src={Icon1} />
                     <SkillsH2>Full Stack Development</SkillsH2>
-                    <SkillsP>bla bla bla</SkillsP>
+                    <SkillsP>I like building applications from scratch and love when both front-end and back-end gets connected - it's like pure magic. My skills stack includes HTML, CSS, JavaScript, React, Ruby, Ruby on Rails. I work with frameworks/Ruby Gems, web APIs and plugins.</SkillsP>
                 </SkillsCard>
                 <SkillsCard>
                     <Img src={Icon2} />
                     <SkillsH2>UX/UI Design</SkillsH2>
-                    <SkillsP>bla bla bla</SkillsP>
+                    <SkillsP>I like to sketch, develop wireframe and prototypes while implementing UX and UI design patterns for intuitive user flow and interactive experiences. My favourite tool is Figma.</SkillsP>
                 </SkillsCard>
                 <SkillsCard>
                     <Img src={Icon3} />
                     <SkillsH2>And More</SkillsH2>
-                    <SkillsP>bla bla bla</SkillsP>
+                    <SkillsP>Thanks to my previous experience in marketing and communications, I love talking to people, communicating with stakeholders and colleagues. My verbal and written communications skills as well as time management, collaboration skills and experience in project management can help with project development from inception to completion. </SkillsP>
                 </SkillsCard>
             </SkillsWrapper>
         </SkillsContainer>

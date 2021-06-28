@@ -1,11 +1,15 @@
 import React from 'react';
-import Home from './pages';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Home from './pages'
+// import Resume from './components/Resume'
 
 const App = () => {
     return (
         <Router>
-            <Home />
+            <Switch>
+                <Route path="/" component={ Home } exact />
+
+            </Switch>
         </Router>
     )
 }
