@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 // import Poster from '../../images/poster.png';
 import { HeroContainer, ParticleStyle, HeroContent, HeroH1, HeroP, HeroBtnWrapper, Arrow, Arrows } from './HeroElements';
 import Particle from '../../components/Particle';
-import {Button} from '../ButtonElement'
+import { Button } from '../ButtonElements'
 
 
 const HeroSection = () => {
@@ -24,11 +24,12 @@ const HeroSection = () => {
                 <HeroP>I am a Full Stack Developer, UX/UI Designer, based in Melbourne</HeroP>
                 <HeroBtnWrapper>
                     <Button 
-                    to="contact" 
-                    onMouseEnter={onHover} 
-                    onMouseLeave={onHover}
-                    primary="true"
-                    dark="true"
+                        to="contact" 
+                        onMouseEnter={onHover} 
+                        onMouseLeave={onHover}
+
+                        primary="true"
+                        dark="false"
                     >Let's Connect { hover ? <Arrows /> : <Arrow/>}
                     </Button>
                 </HeroBtnWrapper>

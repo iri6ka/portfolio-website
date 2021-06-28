@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import Navbar from '../components/Navbar/index';
 import Sidebar from '../components/Sidebar/index';
 import HeroSection from '../components/HeroSection';
+import AboutSection from '../components/AboutSection';
+import {objOne} from '../components/AboutSection/Data';
 
 
 const Home = () => {
@@ -17,6 +19,7 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <HeroSection />
+            <AboutSection {...objOne}/>
         </React.Fragment>
     )
 }

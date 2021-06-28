@@ -7,8 +7,10 @@ export const Nav = styled.nav`
     height: 80px;
     display: flex;
     align-items: center;
+    margin-top: -80px;
     justify-content: center;
-    background:#026670;
+    background:rgba(68, 99, 123, 0.76);
+    // opacity: rgba(68, 99, 123, 0.92);
     font-size: 1rem;
     position: sticky;
     top: 0;
@@ -24,7 +26,7 @@ export const NavbarContainer = styled.div`
     height: 80px;
     z-index: 1;
     width: 100%;
-    padding: 0 24px;
+    padding: 0 20px;
 `
 
 export const NavLogo = styled(LinkRouter)`
@@ -35,10 +37,9 @@ export const NavLogo = styled(LinkRouter)`
     align-items: center;
     font-weight: bold;
     margin-left: 24px;
-    font-family: 'Ruda', sans-serif;
-
+    font-family: 'Codystar', cursive;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     `
 export const MobileIcon = styled.div`
     display: none;
