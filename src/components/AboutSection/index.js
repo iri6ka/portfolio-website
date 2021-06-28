@@ -11,7 +11,7 @@ const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headline, dark
     
     return (
         <>
-           <AboutContainer lightBg={lightBg} id={id}>
+           <AboutContainer lightBg={lightBg} id="about">
                 <AboutWrapper>
                     <AboutRow imgStart={imgStart}>
                     {/* <TopLine>{topLine}</TopLine> */}
@@ -35,7 +35,6 @@ const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headline, dark
                             </TextWrapper>
                         </Column1>
                         <Column2>
-                            {/* <TopLine>{topLine}</TopLine> */}
                             <ImgWrap>
                                 <Img src={Image} alt={alt}/>
                             </ImgWrap>

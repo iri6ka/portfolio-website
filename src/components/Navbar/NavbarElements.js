@@ -4,6 +4,7 @@ import {Link as LinkScroll } from 'react-router-dom';
 
 
 export const Nav = styled.nav`
+    background: ${({scrollNav}) => (scrollNav ? 'rgba(68, 99, 123, 0.76)' : 'transparent')};
     height: 80px;
     display: flex;
     align-items: center;
@@ -77,13 +78,11 @@ export const NavLinks = styled(LinkScroll)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-    // margin: 20px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Ruda', sans-serif;
-    // margin-top: 20px;   
     
     &.active{
-        border-bottom: 3px solid #9fedd7;
+        border-bottom: 3px solid #DA7B93;
     }
 `
 export const NavBtn = styled.nav`
