@@ -1,19 +1,13 @@
 import React from 'react';
 import { Button } from '../ButtonElements';
 import { AboutContainer, AboutWrapper, AboutRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img} from './AboutElements';
-import Image1 from '../../images/svg1.svg';
-import Image2 from '../../images/svg2.svg';
-import Image3 from '../../images/svg3.svg';
-import Image4 from '../../images/svg4.svg';
-import Image5 from '../../images/svg5.svg';
-
-
-
-
+// import Image1 from '../../images/svg1.svg';
+// import Image2 from '../../images/svg2.svg';
+// import Image3 from '../../images/svg3.svg';
+// import Image4 from '../../images/svg4.svg';
+import Image from '../../images/svg-hero.svg';
 
 const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, alt, primary, dark, dark2}) => {
-    
-    
     
     return (
         <>
@@ -43,7 +37,7 @@ const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headline, dark
                         <Column2>
                             {/* <TopLine>{topLine}</TopLine> */}
                             <ImgWrap>
-                                <Img src={Image5} alt={alt}/>
+                                <Img src={Image} alt={alt}/>
                             </ImgWrap>
                         </Column2>
                     </AboutRow>

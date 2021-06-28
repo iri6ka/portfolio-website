@@ -4,6 +4,7 @@ import Sidebar from '../components/Sidebar/index';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import {objOne} from '../components/AboutSection/Data';
+import Skills from '../components/Skills';
 
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
             <Navbar toggle={toggle}/>
             <HeroSection />
             <AboutSection {...objOne}/>
+            <Skills />
         </React.Fragment>
     )
 }
