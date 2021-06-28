@@ -10,7 +10,7 @@ export const objOne = {
     imgStart: false,
     img: require('../../images/svg-3.svg'), 
     alt: 'Portfolio',
-    dark: true,
+    dark: false,
     primary: true,
     darkText: false
 }

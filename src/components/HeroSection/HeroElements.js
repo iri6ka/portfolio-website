@@ -35,9 +35,8 @@ export const HeroHeader = styled.header`
 export const ParticleStyle = styled.div`
     position: relative;
     width: 100%;
-    // padding: 10px 22px;
     height: 100%;
-    background-color: #026670;
+    background-color: #44637B;
 
 `
 export const HeroContent = styled.div`
