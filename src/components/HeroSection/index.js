@@ -29,7 +29,7 @@ const HeroSection = () => {
                         onMouseLeave={onHover}
 
                         primary="true"
-                        dark="false"
+                        dark="true"
                     >Let's Connect { hover ? <Arrows /> : <Arrow/>}
                     </Button>
                 </HeroBtnWrapper>

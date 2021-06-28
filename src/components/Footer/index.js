@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {animateScroll as scroll} from 'react-scroll'
 import {FooterContainer, 
     FooterWrap, 
     SocialMedia, 
@@ -12,12 +12,16 @@ import {FooterContainer,
 import {FaTwitter, FaLinkedin, FaGithub} from 'react-icons/fa'
 
 const Footer = () => {
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
     return (
         <FooterContainer>
             <FooterWrap>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to='/'>
+                        <SocialLogo to='/' onClick={toggleHome}>
                             Irina Konnova
                         </SocialLogo>
                         <WebsiteRights>Irina Konnova © {new Date().getFullYear()} All Rights Reserved.</WebsiteRights>

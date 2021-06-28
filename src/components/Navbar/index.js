@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {HiMenuAlt4} from "react-icons/hi";
+import {animateScroll as scroll} from 'react-scroll';
 import {
     Nav, 
     NavbarContainer, 
@@ -16,23 +17,48 @@ import {
 import IKResume from '../../files/IrinaKonnovaResume.pdf'
 
 const Navbar = ({toggle}) => {
+
+    const [scrollNav, setScrollNav] = useState(false)
+
+    const changeNav = () => {
+        if(window.scrollY >= 80) {
+            setScrollNav(true)
+        } else{
+            setScrollNav(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    })
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
+
     return (
         <>
-            <Nav>
+            <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to='/'>Irina Konnova</NavLogo>
+                    <NavLogo to='/' onClick={toggleHome}>Irina Konnova</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <HiMenuAlt4 />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="about">About</NavLinks>
+                            <NavLinks to="about" 
+                            smooth={true} duration={500} spy={true} exact={true} offset={-80}
+                            >About</NavLinks>
                          </NavItem> 
                         <NavItem>
-                            <NavLinks to="skills">Skills</NavLinks>
+                            <NavLinks to="skills"
+                            smooth={true} duration={500} spy={true} exact={true} offset={-80}
+                            >Skills</NavLinks>
                         </NavItem> 
                         <NavItem>
-                            <NavLinks to="projects">Projects</NavLinks>
+                            <NavLinks to="projects"
+                            smooth={true} duration={500} spy={true} exact={true} offset={-80}
+                            >Projects</NavLinks>
                         </NavItem>
 
                         <NavItem>
