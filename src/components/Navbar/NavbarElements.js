@@ -4,7 +4,7 @@ import {Link as LinkScroll } from 'react-router-dom';
 
 
 export const Nav = styled.nav`
-    height: 70px;
+    height: 80px;
     display: flex;
     align-items: center;
     margin-top: -80px;
@@ -37,10 +37,9 @@ export const NavLogo = styled(LinkRouter)`
     align-items: center;
     font-weight: bold;
     margin-left: 24px;
-    font-family: 'Ruda', sans-serif;
-
+    font-family: 'Codystar', cursive;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     `
 export const MobileIcon = styled.div`
     display: none;

@@ -24,11 +24,12 @@ const HeroSection = () => {
                 <HeroP>I am a Full Stack Developer, UX/UI Designer, based in Melbourne</HeroP>
                 <HeroBtnWrapper>
                     <Button 
-                    to="contact" 
-                    onMouseEnter={onHover} 
-                    onMouseLeave={onHover}
-                    primary="true"
-                    dark="true"
+                        to="contact" 
+                        onMouseEnter={onHover} 
+                        onMouseLeave={onHover}
+
+                        primary="true"
+                        dark="false"
                     >Let's Connect { hover ? <Arrows /> : <Arrow/>}
                     </Button>
                 </HeroBtnWrapper>

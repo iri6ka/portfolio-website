@@ -104,6 +104,6 @@ export const Arrow = styled(FiChevronRight)`
 `
 
 export const Arrows = styled(FiChevronsRight)`
-margin-left: 8px;
-font-size: 20px;
+    margin-left: 8px;
+    font-size: 20px;
 `

@@ -15,7 +15,7 @@ export const AboutContainer = styled.div`
 export const AboutWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
+    height: 890px;
     width: 100%;
     max-width: 1200px;
     margin-right: auto;
@@ -56,7 +56,7 @@ export const TextWrapper = styled.div`
     `
 
 export const TopLine = styled.p`
-    color: #FCE181;
+    color: #DA7B93;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -71,11 +71,10 @@ export const Heading = styled.h1`
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
-    color: ${({lightText}) => (lightText ? '#fafafa' : '#000')};
+    color: ${({lightText}) => (lightText ? '#fff' : '#000')};
 
     @media scrreen and (max-width: 480px){
         font-size: 23px;
-
     }
 `
 
@@ -97,7 +96,7 @@ export const ImgWrap = styled.div`
 `
 
 export const Img = styled.img`
-    width: 100%;
+    width: 80%;
     margin: 0 0 10px 0;
     padding-right: 0;
 `
