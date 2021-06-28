@@ -64,7 +64,7 @@ export const NavMenu = styled.ul`
     margin-right: -20px;
 
     @media screen and (max-width: 768px) {
-        display: none;
+        display: none;}
 `
 export const NavItem = styled.li`
     height: 60px;

@@ -13,6 +13,8 @@ import {
 } from './NavbarElements'
 // import Resume from '../Resume'
 
+import IKResume from '../../files/IrinaKonnovaResume.pdf'
+
 const Navbar = ({toggle}) => {
     return (
         <>
@@ -38,7 +40,7 @@ const Navbar = ({toggle}) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to='resume'>Resume</NavBtnLink>
+                        <NavBtnLink to="/resume" scr={IKResume} target="_blank" area-label="Resume">Resume</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import {objOne} from '../components/AboutSection/Data';
 import Skills from '../components/Skills';
+import Footer from '../components/Footer';
 
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
             <HeroSection />
             <AboutSection {...objOne}/>
             <Skills />
+            <Footer />
         </React.Fragment>
     )
 }
