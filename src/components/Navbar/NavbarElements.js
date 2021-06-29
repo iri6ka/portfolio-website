@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {Link as LinkRouter } from 'react-router-dom';
-import {Link as LinkScroll } from 'react-router-dom';
+import {Link as LinkScroll } from 'react-scroll';
 
 
 export const Nav = styled.nav`
@@ -53,7 +53,7 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 1.5rem;
         cursor: pointer;
-        color: #000;
+        color: #fff;
     }
 `
 
@@ -62,7 +62,7 @@ export const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    margin-right: -20px;
+    margin-right: 30px;
 
     @media screen and (max-width: 768px) {
         display: none;}
@@ -70,7 +70,7 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
     height: 60px;
 `
-export const NavLinks = styled(LinkScroll)`
+export const Link = styled(LinkScroll)`
     color: #edeae5;
     display: flex;
     align-items: center;

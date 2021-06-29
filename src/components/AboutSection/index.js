@@ -7,7 +7,7 @@ import { AboutContainer, AboutWrapper, AboutRow, Column1, Column2, TextWrapper, 
 // import Image4 from '../../images/svg4.svg';
 import Image from '../../images/svg-hero.svg';
 
-const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, alt, primary, dark, dark2}) => {
+const About = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, alt, primary, dark, dark2}) => {
     
     return (
         <>
@@ -25,7 +25,7 @@ const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headline, dark
                                     smooth={true}
                                     duration={500}
                                     spy={true}
-                                    exact="true"
+                                    exact={true}                                    
                                     offset={-80}
                                     primary={primary ? 1 : 0}
                                     dark={dark ? 1 : 0}
@@ -46,4 +46,4 @@ const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headline, dark
     )
 }
 
-export default AboutSection;
+export default About;

@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 // import {Link} from 'react-router-dom';
-import img from '../../images/background.png'
+import img from '../../images/background.png';
 
 
 export const Container = styled.div`
-    min-height: 1000px;
+    min-height: 1200px;
     background-image: url(${img});
 
     font-family: 'Ruda', sans-serif;
@@ -14,7 +14,7 @@ export const Container = styled.div`
     right: 0;
     top: 0;
     z-index: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
 `
 
 export const FormWrap = styled.div`
@@ -26,7 +26,7 @@ export const FormWrap = styled.div`
 
     @media screen and (max-width: 400px) {
         height: 80%;
-    }`
+    }`;
 // `
 // export const Icon = styled(Link)`
 //     margin-left: 32px;
@@ -43,7 +43,7 @@ export const FormWrap = styled.div`
 // `;
 
 export const FormContent = styled.div`
-    margin-top: 150px;
+    margin-top: 120px;
 
     height: 100%;
     display: flex;
@@ -69,6 +69,7 @@ export const Form = styled.form`
 
     @media screen and (max-width: 400px){
         padding: 32px 32px;
+        max-width: 320px;
     }
 `;
 

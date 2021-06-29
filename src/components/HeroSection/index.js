@@ -24,7 +24,7 @@ const HeroSection = () => {
                 <HeroP>I am a Full Stack Developer, UX/UI Designer, based in Melbourne</HeroP>
                 <HeroBtnWrapper>
                     <Button 
-                        to="contact" 
+                        to="/contact" 
                         onMouseEnter={onHover} 
                         onMouseLeave={onHover}
                         primary={true}

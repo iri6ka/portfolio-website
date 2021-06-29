@@ -3,8 +3,9 @@ import img from '../../images/background.png'
 
 // font-family: 'Ruda', sans-serif;
 
-export const SkillsContainer = styled.div`
-    height: 890px;
+export const SkillsContainer = styled.section`
+    height: 980px;
+    offset: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,12 +13,22 @@ export const SkillsContainer = styled.div`
     background-image: url(${img});
     
     @media screen and (max-width: 768px) {
-        height: 1700px;
+        height: 2000px;
+
+     }
+
+    @media screen and (max-width: 600px){
+        /* max-width: 300px; */
+        /* width: 100%; */
+
+        height: 2100px;
     }
 
     @media screen and (max-width: 480px){
-        max-width: 300px;
-        height: 2000px;
+        /* max-width: 300px; */
+        /* width: 100%; */
+
+        height: 2100px;
     }
 `
 
@@ -54,9 +65,14 @@ export const SkillsCard = styled.div`
     transition: all 0.2 ease-in-out;
 
 
-    @media screen and (max-width: 720px) {
-        width: 300px;
+    @media screen and (max-width: 768px) {
+        width: 500px;
         height: 450px;
+
+    }
+    @media screen and (max-width: 540px) {
+        width: 400px;
+        height: 400px;
 
     }
 
@@ -83,9 +99,15 @@ export const SkillsH1 = styled.h1`
     font-size: 2.5rem;
     font-family: 'Ruda', sans-serif;
     color: #fff;
-    magrin-bottom: 64px;
+    margin-bottom: 54px;
 
-    @media screen (max-width: 480px){
+
+    @media screen and (max-width: 600px){
+        /* margin-top: 80px; */
+    }
+
+
+    @media screen and (max-width: 480px){
         font-size: 2rem;
     }
 `;

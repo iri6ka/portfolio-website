@@ -14,7 +14,7 @@ import emailjs from 'emailjs-com';
 // import Navbar from '../components/Navbar'
 require('dotenv').config();
 
-export default function ContactPage() {
+export default function Contact() {
 
   function sendEmail(e) {
     e.preventDefault();
@@ -31,7 +31,6 @@ export default function ContactPage() {
   return (
         <Container>
             <FormWrap>
-                {/* <Icon to="/">Irina Konnova</Icon> */}
                 <FormContent>
                     <Form action="#" className="contact-form" onSubmit={sendEmail}>
                         <FormH1>Send me a line if you want to have a chat about your upcoming project - I will come back to you as soon as I can!</FormH1>
