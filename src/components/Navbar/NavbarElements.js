@@ -37,7 +37,7 @@ export const NavLogo = styled(LinkRouter)`
     font-size: 1.5rem;
     align-items: center;
     font-weight: bold;
-    margin-left: 24px;
+    /* margin-left: 24px; */
     font-family: 'Codystar', cursive;
     text-decoration: none;
     color: #fff;
