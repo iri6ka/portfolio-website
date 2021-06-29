@@ -7,7 +7,7 @@ export default function Contact() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('website_email_service', `${process.env.REACT_APP_OUR_TEMPLATE_ID}` , e.target, `${process.env.REACT_APP_YOUR_USER_ID}`)
+    emailjs.sendForm('gmail', `${process.env.REACT_APP_OUR_TEMPLATE_ID}` , e.target, `${process.env.REACT_APP_YOUR_USER_ID}`)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
