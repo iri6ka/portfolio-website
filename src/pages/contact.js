@@ -1,15 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import emailjs from 'emailjs-com';
 require('dotenv').config();
 
 export default function Contact() {
-
-    useEffect(() => {
-
-        console.log(process.env)
-    })
-
-    // console.log(process.env) ;
 
   function sendEmail(e) {
     e.preventDefault();
