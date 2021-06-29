@@ -14,7 +14,7 @@ const HeroSection = () => {
     }
     return (
         <>
-            <HeroContainer>
+            <HeroContainer id='home'>
                 <ParticleStyle>
                     <Particle />
                 </ParticleStyle>
