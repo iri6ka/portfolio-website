@@ -1,0 +1,15 @@
+# pack-refs with: peeled fully-peeled sorted 
+dd6d79af391768a15cb12d7a18d0972090215a00 refs/heads/contact-form
+dd9420491ed217f255371b87ba2aa4584e3e6f07 refs/heads/footer
+b027ba88b3796934f8752650cda78091f755d234 refs/heads/master
+f37590a45e007278c7102a67ed14b7508853914b refs/heads/navbar
+169b02e516abfa701c599f88e9bb7e0e6f401206 refs/heads/skills
+bcc2864fb1d5c0f10bf8bef82a9af91e78010512 refs/pull/1/head
+36c9c7b47827ceb21ef84f38c64c41ace0401444 refs/pull/2/head
+026b48df1e6e950f613e24fcbd571f8ab045827b refs/pull/3/head
+21d4b2d04221a4f9b7cc19d8a33db4828e2daba1 refs/pull/4/head
+31d8443871a4e7a8ab3845b742c65a43045bd1f4 refs/pull/5/head
+169b02e516abfa701c599f88e9bb7e0e6f401206 refs/pull/6/head
+8361277419cdfa4e6fba4f2389877086dfec6c14 refs/pull/7/head
+c8c3fc7b56e18e95a684639d954c8c705c64fb65 refs/pull/8/head
+dd6d79af391768a15cb12d7a18d0972090215a00 refs/pull/9/head
