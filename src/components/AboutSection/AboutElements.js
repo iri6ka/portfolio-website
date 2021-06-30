@@ -1,4 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import {Link as LinkRouter } from 'react-router-dom';
+
 
 export const AboutContainer = styled.section`
     color: #fff;
@@ -83,7 +85,7 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({darkText}) => (darkText ? '#010101' : '#fff')}
+    color: ${({darkText}) => (darkText ? '#010101' : '#fff')};
 `
 export const BtnWrap = styled.div`
     display: flex;
@@ -99,4 +101,26 @@ export const Img = styled.img`
     width: 80%;
     margin: 0 0 10px 0;
     padding-right: 0;
+`
+
+export const BtnLink = styled(LinkRouter)`
+    border-radius: 50px;
+    background: #2E1518;
+    white-space: nowrap;
+    padding: 16px 64px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    font-family: 'Ruda', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        background: #DA7B93;
+        color: #000;
+    }
 `

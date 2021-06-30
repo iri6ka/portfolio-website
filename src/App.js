@@ -13,7 +13,11 @@ const App = () => {
         <Router>
             <Switch>
                 <Route  path="/contact" component={ ContactPage } exact/>
-                <Route  path="/" component={ Home } exact/>                
+                <Route  path="/" component={ Home } exact/>
+                <Route path='/resume' component={() => { 
+                window.location.href = 'https://irinakonnova-resume.s3.ap-southeast-2.amazonaws.com/Irina+Konnova+Resume+-+July+2021.pdf'; 
+                return null;
+                }}/>                
             </Switch>
         </Router>
     )

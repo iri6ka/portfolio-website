@@ -65,7 +65,7 @@ const Navbar = ({toggle}) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/resume" target="_blank" area-label="Resume">Resume</NavBtnLink>
+                        <NavBtnLink to="/resume" target="_blank">Resume</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>
