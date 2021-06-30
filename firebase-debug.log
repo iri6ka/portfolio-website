@@ -1,0 +1,166 @@
+[debug] [2021-06-30T13:23:36.784Z] ----------------------------------------------------------------------
+[debug] [2021-06-30T13:23:36.785Z] Command:       /Users/Iri6ka/.nvm/versions/node/v15.5.1/bin/node /Users/Iri6ka/.nvm/versions/node/v15.5.1/bin/firebase deploy --debug
+[debug] [2021-06-30T13:23:36.785Z] CLI Version:   9.14.0
+[debug] [2021-06-30T13:23:36.785Z] Platform:      darwin
+[debug] [2021-06-30T13:23:36.785Z] Node Version:  v15.5.1
+[debug] [2021-06-30T13:23:36.786Z] Time:          Wed Jun 30 2021 23:23:36 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2021-06-30T13:23:36.786Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-30T13:23:36.794Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-30T13:23:36.795Z] > authorizing via signed-in user (ikonnova@gmail.com)
+[debug] [2021-06-30T13:23:36.795Z] [iam] checking project irina-tech for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-06-30T13:23:36.796Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-30T13:23:36.797Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-30T13:23:37.121Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 30 Jun 2021 13:23:37 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-30T13:23:37.168Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/irina-tech:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-06-30T13:23:38.491Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 30 Jun 2021 13:23:38 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1062","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-30T13:23:38.495Z] > refreshing access token with scopes: []
+[debug] [2021-06-30T13:23:38.496Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-30T13:23:38.855Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 30 Jun 2021 13:23:38 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-30T13:23:38.903Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/irina-tech [none]
+[debug] [2021-06-30T13:23:39.403Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/irina-tech 200
+[debug] [2021-06-30T13:23:39.404Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/irina-tech {"projectId":"irina-tech","projectNumber":"1061382563086","displayName":"irina-tech","name":"projects/irina-tech","resources":{"hostingSite":"irina-tech"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'irina-tech'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-06-30T13:23:39.409Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-30T13:23:39.409Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-30T13:23:39.762Z] <<< HTTP RESPONSE 200 {"date":"Wed, 30 Jun 2021 13:23:39 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-30T13:23:39.807Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/irina-tech/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-06-30T13:23:41.765Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 30 Jun 2021 13:23:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[irina-tech]: beginning deploy... 
+[info] i  hosting[irina-tech]: found 17 files in build 
+[debug] [2021-06-30T13:23:41.775Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2021-06-30T13:23:41.989Z] > refreshing access token with scopes: []
+[debug] [2021-06-30T13:23:41.989Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-30T13:23:41.991Z] [hosting] hash cache [YnVpbGQ] stored for 17 files
+[debug] [2021-06-30T13:23:41.991Z] [hosting][hash queue][FINAL] {"max":211,"min":6,"avg":22.235294117647058,"active":0,"complete":17,"success":17,"errored":0,"retried":0,"total":17,"elapsed":216}
+[debug] [2021-06-30T13:23:42.335Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Wed, 30 Jun 2021 13:23:42 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-30T13:23:42.380Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/irina-tech/versions/08ab05e74985a08b:populateFiles [none]
+[debug] [2021-06-30T13:23:42.380Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/irina-tech/versions/08ab05e74985a08b:populateFiles {"files":{"/asset-manifest.json":"63135d6c6acead17ba8e9c0f399ea2fa797f2ea8e9ca48e83b6cae5023c6f02d","/robots.txt":"391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","/static/js/2.b5167ff6.chunk.js.LICENSE.txt":"bfbf3a4b9e414262e302b9c850733cb7cfafa9577cb62b814d04300a511215fc","/index.html":"68867031fae625770f5673d4c08eea04145a0913d5a69496403159ec4317e9fa","/static/js/runtime-main.66469698.js":"74814d8af26b99655fa1727cfb186f2ecbd817270267430d7b57fda866590fcd","/static/js/runtime-main.66469698.js.map":"f0fccd58c4b302f17fbc5ebff610774cee09420ad663a35f1fdfcb28d6b8137d","/static/js/main.ef20fbae.chunk.js":"351e45f9f7898c67ae066ef04c84acc10f869758039f3fee5c9ff03f30535b95","/static/media/svg-1.9dcab6d1.svg":"db5579a4e5235daa467c9ff3de9f9ae71010432ec96c65874c7c1dcaf3e04360","/static/media/svg-2.31d101a0.svg":"ef79a4ab12498a4debbcabb7651118af982632e7a4f30eedb08534f0b595441a","/manifest.json":"3c7d19836b1beff56ea43f1477d03963a78a1e843dff190ba86d20dbb8c44b5e","/static/media/svg-3.d4a7bc9b.svg":"0cfbc758a34468666684ecbafba2bb34a1a482d9eecd4ccb14b002898bc3740d","/static/media/svg-hero.ef846b2f.svg":"88a2fb3e991f1886f696fae80241d0f1545a897d2421fcc2e5123627db361ab1","/static/js/main.ef20fbae.chunk.js.map":"1dcfc7e1d141818b11defbe95e2e45a5cbc58a4a6352f5f0764231c9e4e07252","/favicon.png":"be67d47590ba3283ec63114fc128cc7dd0aabf03e78a95ea6e766ca3882b730e","/static/js/2.b5167ff6.chunk.js":"694647fb51e0ef042e54f03eb6fc9f2492e80809eeed594fab4a7e70f14b7f4b","/static/media/background.17d83be2.png":"7b685a1e127a1da16ee72d1f5ed852d965093117bafa8aca4cffb5c3dcc2d58b","/static/js/2.b5167ff6.chunk.js.map":"9bbcc6717f9859d9e9f97d3a6cfde68f9ad0079c6e327435f24a23c56987b3c5"}}
+[info] i  hosting: adding files to version [0/17] (0%) 
+[debug] [2021-06-30T13:23:43.989Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/irina-tech/versions/08ab05e74985a08b:populateFiles 200
+[debug] [2021-06-30T13:23:43.989Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/irina-tech/versions/08ab05e74985a08b:populateFiles {"uploadRequiredHashes":["88a2fb3e991f1886f696fae80241d0f1545a897d2421fcc2e5123627db361ab1","db5579a4e5235daa467c9ff3de9f9ae71010432ec96c65874c7c1dcaf3e04360","0cfbc758a34468666684ecbafba2bb34a1a482d9eecd4ccb14b002898bc3740d","bfbf3a4b9e414262e302b9c850733cb7cfafa9577cb62b814d04300a511215fc","694647fb51e0ef042e54f03eb6fc9f2492e80809eeed594fab4a7e70f14b7f4b","f0fccd58c4b302f17fbc5ebff610774cee09420ad663a35f1fdfcb28d6b8137d","68867031fae625770f5673d4c08eea04145a0913d5a69496403159ec4317e9fa","9bbcc6717f9859d9e9f97d3a6cfde68f9ad0079c6e327435f24a23c56987b3c5","7b685a1e127a1da16ee72d1f5ed852d965093117bafa8aca4cffb5c3dcc2d58b","be67d47590ba3283ec63114fc128cc7dd0aabf03e78a95ea6e766ca3882b730e","351e45f9f7898c67ae066ef04c84acc10f869758039f3fee5c9ff03f30535b95","63135d6c6acead17ba8e9c0f399ea2fa797f2ea8e9ca48e83b6cae5023c6f02d","ef79a4ab12498a4debbcabb7651118af982632e7a4f30eedb08534f0b595441a","74814d8af26b99655fa1727cfb186f2ecbd817270267430d7b57fda866590fcd","391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2","1dcfc7e1d141818b11defbe95e2e45a5cbc58a4a6352f5f0764231c9e4e07252","3c7d19836b1beff56ea43f1477d03963a78a1e843dff190ba86d20dbb8c44b5e"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files"}
+[debug] [2021-06-30T13:23:43.993Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/88a2fb3e991f1886f696fae80241d0f1545a897d2421fcc2e5123627db361ab1 [none]
+[debug] [2021-06-30T13:23:43.993Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/88a2fb3e991f1886f696fae80241d0f1545a897d2421fcc2e5123627db361ab1 [stream]
+[debug] [2021-06-30T13:23:43.993Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/db5579a4e5235daa467c9ff3de9f9ae71010432ec96c65874c7c1dcaf3e04360 [none]
+[debug] [2021-06-30T13:23:43.994Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/db5579a4e5235daa467c9ff3de9f9ae71010432ec96c65874c7c1dcaf3e04360 [stream]
+[debug] [2021-06-30T13:23:43.994Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/0cfbc758a34468666684ecbafba2bb34a1a482d9eecd4ccb14b002898bc3740d [none]
+[debug] [2021-06-30T13:23:43.994Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/0cfbc758a34468666684ecbafba2bb34a1a482d9eecd4ccb14b002898bc3740d [stream]
+[debug] [2021-06-30T13:23:43.995Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/bfbf3a4b9e414262e302b9c850733cb7cfafa9577cb62b814d04300a511215fc [none]
+[debug] [2021-06-30T13:23:43.995Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/bfbf3a4b9e414262e302b9c850733cb7cfafa9577cb62b814d04300a511215fc [stream]
+[debug] [2021-06-30T13:23:43.997Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/694647fb51e0ef042e54f03eb6fc9f2492e80809eeed594fab4a7e70f14b7f4b [none]
+[debug] [2021-06-30T13:23:43.997Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/694647fb51e0ef042e54f03eb6fc9f2492e80809eeed594fab4a7e70f14b7f4b [stream]
+[debug] [2021-06-30T13:23:43.998Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/f0fccd58c4b302f17fbc5ebff610774cee09420ad663a35f1fdfcb28d6b8137d [none]
+[debug] [2021-06-30T13:23:43.998Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/f0fccd58c4b302f17fbc5ebff610774cee09420ad663a35f1fdfcb28d6b8137d [stream]
+[debug] [2021-06-30T13:23:43.998Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/68867031fae625770f5673d4c08eea04145a0913d5a69496403159ec4317e9fa [none]
+[debug] [2021-06-30T13:23:43.998Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/68867031fae625770f5673d4c08eea04145a0913d5a69496403159ec4317e9fa [stream]
+[debug] [2021-06-30T13:23:43.999Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/9bbcc6717f9859d9e9f97d3a6cfde68f9ad0079c6e327435f24a23c56987b3c5 [none]
+[debug] [2021-06-30T13:23:43.999Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/9bbcc6717f9859d9e9f97d3a6cfde68f9ad0079c6e327435f24a23c56987b3c5 [stream]
+[debug] [2021-06-30T13:23:43.999Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/7b685a1e127a1da16ee72d1f5ed852d965093117bafa8aca4cffb5c3dcc2d58b [none]
+[debug] [2021-06-30T13:23:43.999Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/7b685a1e127a1da16ee72d1f5ed852d965093117bafa8aca4cffb5c3dcc2d58b [stream]
+[debug] [2021-06-30T13:23:44.000Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/be67d47590ba3283ec63114fc128cc7dd0aabf03e78a95ea6e766ca3882b730e [none]
+[debug] [2021-06-30T13:23:44.000Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/be67d47590ba3283ec63114fc128cc7dd0aabf03e78a95ea6e766ca3882b730e [stream]
+[debug] [2021-06-30T13:23:44.000Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/351e45f9f7898c67ae066ef04c84acc10f869758039f3fee5c9ff03f30535b95 [none]
+[debug] [2021-06-30T13:23:44.000Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/351e45f9f7898c67ae066ef04c84acc10f869758039f3fee5c9ff03f30535b95 [stream]
+[debug] [2021-06-30T13:23:44.001Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/63135d6c6acead17ba8e9c0f399ea2fa797f2ea8e9ca48e83b6cae5023c6f02d [none]
+[debug] [2021-06-30T13:23:44.001Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/63135d6c6acead17ba8e9c0f399ea2fa797f2ea8e9ca48e83b6cae5023c6f02d [stream]
+[debug] [2021-06-30T13:23:44.001Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/ef79a4ab12498a4debbcabb7651118af982632e7a4f30eedb08534f0b595441a [none]
+[debug] [2021-06-30T13:23:44.001Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/ef79a4ab12498a4debbcabb7651118af982632e7a4f30eedb08534f0b595441a [stream]
+[debug] [2021-06-30T13:23:44.002Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/74814d8af26b99655fa1727cfb186f2ecbd817270267430d7b57fda866590fcd [none]
+[debug] [2021-06-30T13:23:44.002Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/74814d8af26b99655fa1727cfb186f2ecbd817270267430d7b57fda866590fcd [stream]
+[debug] [2021-06-30T13:23:44.002Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2 [none]
+[debug] [2021-06-30T13:23:44.003Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2 [stream]
+[debug] [2021-06-30T13:23:44.003Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/1dcfc7e1d141818b11defbe95e2e45a5cbc58a4a6352f5f0764231c9e4e07252 [none]
+[debug] [2021-06-30T13:23:44.003Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/1dcfc7e1d141818b11defbe95e2e45a5cbc58a4a6352f5f0764231c9e4e07252 [stream]
+[debug] [2021-06-30T13:23:44.003Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/3c7d19836b1beff56ea43f1477d03963a78a1e843dff190ba86d20dbb8c44b5e [none]
+[debug] [2021-06-30T13:23:44.004Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/3c7d19836b1beff56ea43f1477d03963a78a1e843dff190ba86d20dbb8c44b5e [stream]
+[debug] [2021-06-30T13:23:44.004Z] [hosting][populate queue][FINAL] {"max":2005,"min":2005,"avg":2005,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2016}
+[debug] [2021-06-30T13:23:44.005Z] [hosting] uploads queued: 17
+[debug] [2021-06-30T13:23:45.660Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/88a2fb3e991f1886f696fae80241d0f1545a897d2421fcc2e5123627db361ab1 200
+[debug] [2021-06-30T13:23:45.661Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/88a2fb3e991f1886f696fae80241d0f1545a897d2421fcc2e5123627db361ab1 [stream]
+[debug] [2021-06-30T13:23:45.662Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/0cfbc758a34468666684ecbafba2bb34a1a482d9eecd4ccb14b002898bc3740d 200
+[debug] [2021-06-30T13:23:45.663Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/0cfbc758a34468666684ecbafba2bb34a1a482d9eecd4ccb14b002898bc3740d [stream]
+[debug] [2021-06-30T13:23:45.688Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/db5579a4e5235daa467c9ff3de9f9ae71010432ec96c65874c7c1dcaf3e04360 200
+[debug] [2021-06-30T13:23:45.688Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/db5579a4e5235daa467c9ff3de9f9ae71010432ec96c65874c7c1dcaf3e04360 [stream]
+[debug] [2021-06-30T13:23:45.689Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/3c7d19836b1beff56ea43f1477d03963a78a1e843dff190ba86d20dbb8c44b5e 200
+[debug] [2021-06-30T13:23:45.689Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/3c7d19836b1beff56ea43f1477d03963a78a1e843dff190ba86d20dbb8c44b5e [stream]
+[debug] [2021-06-30T13:23:45.699Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/ef79a4ab12498a4debbcabb7651118af982632e7a4f30eedb08534f0b595441a 200
+[debug] [2021-06-30T13:23:45.700Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/ef79a4ab12498a4debbcabb7651118af982632e7a4f30eedb08534f0b595441a [stream]
+[debug] [2021-06-30T13:23:45.700Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/1dcfc7e1d141818b11defbe95e2e45a5cbc58a4a6352f5f0764231c9e4e07252 200
+[debug] [2021-06-30T13:23:45.700Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/1dcfc7e1d141818b11defbe95e2e45a5cbc58a4a6352f5f0764231c9e4e07252 [stream]
+[debug] [2021-06-30T13:23:45.701Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2 200
+[debug] [2021-06-30T13:23:45.701Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/391d14b3c2f8c9143a27a28c7399585142228d4d1bdbe2c87ac946de411fa9a2 [stream]
+[debug] [2021-06-30T13:23:45.701Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/f0fccd58c4b302f17fbc5ebff610774cee09420ad663a35f1fdfcb28d6b8137d 200
+[debug] [2021-06-30T13:23:45.701Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/f0fccd58c4b302f17fbc5ebff610774cee09420ad663a35f1fdfcb28d6b8137d [stream]
+[debug] [2021-06-30T13:23:45.701Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/68867031fae625770f5673d4c08eea04145a0913d5a69496403159ec4317e9fa 200
+[debug] [2021-06-30T13:23:45.702Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/68867031fae625770f5673d4c08eea04145a0913d5a69496403159ec4317e9fa [stream]
+[debug] [2021-06-30T13:23:45.702Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/74814d8af26b99655fa1727cfb186f2ecbd817270267430d7b57fda866590fcd 200
+[debug] [2021-06-30T13:23:45.702Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/74814d8af26b99655fa1727cfb186f2ecbd817270267430d7b57fda866590fcd [stream]
+[debug] [2021-06-30T13:23:45.717Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/351e45f9f7898c67ae066ef04c84acc10f869758039f3fee5c9ff03f30535b95 200
+[debug] [2021-06-30T13:23:45.717Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/351e45f9f7898c67ae066ef04c84acc10f869758039f3fee5c9ff03f30535b95 [stream]
+[debug] [2021-06-30T13:23:45.718Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/63135d6c6acead17ba8e9c0f399ea2fa797f2ea8e9ca48e83b6cae5023c6f02d 200
+[debug] [2021-06-30T13:23:45.718Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/63135d6c6acead17ba8e9c0f399ea2fa797f2ea8e9ca48e83b6cae5023c6f02d [stream]
+[debug] [2021-06-30T13:23:45.728Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/bfbf3a4b9e414262e302b9c850733cb7cfafa9577cb62b814d04300a511215fc 200
+[debug] [2021-06-30T13:23:45.728Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/bfbf3a4b9e414262e302b9c850733cb7cfafa9577cb62b814d04300a511215fc [stream]
+[info] i  hosting: uploading new files [13/17] (76%) 
+[debug] [2021-06-30T13:23:45.947Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/694647fb51e0ef042e54f03eb6fc9f2492e80809eeed594fab4a7e70f14b7f4b 200
+[debug] [2021-06-30T13:23:45.948Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/694647fb51e0ef042e54f03eb6fc9f2492e80809eeed594fab4a7e70f14b7f4b [stream]
+[debug] [2021-06-30T13:23:46.002Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/be67d47590ba3283ec63114fc128cc7dd0aabf03e78a95ea6e766ca3882b730e 200
+[debug] [2021-06-30T13:23:46.002Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/be67d47590ba3283ec63114fc128cc7dd0aabf03e78a95ea6e766ca3882b730e [stream]
+[debug] [2021-06-30T13:23:46.038Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/9bbcc6717f9859d9e9f97d3a6cfde68f9ad0079c6e327435f24a23c56987b3c5 200
+[debug] [2021-06-30T13:23:46.038Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/9bbcc6717f9859d9e9f97d3a6cfde68f9ad0079c6e327435f24a23c56987b3c5 [stream]
+[debug] [2021-06-30T13:23:46.426Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/7b685a1e127a1da16ee72d1f5ed852d965093117bafa8aca4cffb5c3dcc2d58b 200
+[debug] [2021-06-30T13:23:46.427Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/irina-tech/versions/08ab05e74985a08b/files/7b685a1e127a1da16ee72d1f5ed852d965093117bafa8aca4cffb5c3dcc2d58b [stream]
+[debug] [2021-06-30T13:23:46.427Z] [hosting][upload queue][FINAL] {"max":2435,"min":1671,"avg":1801.8235294117646,"active":0,"complete":17,"success":17,"errored":0,"retried":0,"total":17,"elapsed":2437}
+[info] ✔  hosting[irina-tech]: file upload complete 
+[debug] [2021-06-30T13:23:46.431Z] [hosting] deploy completed after 4665ms
+[debug] [2021-06-30T13:23:46.436Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "irina-tech"
+    },
+    "site": "irina-tech",
+    "version": "sites/irina-tech/versions/08ab05e74985a08b"
+  }
+]
+[info] i  hosting[irina-tech]: finalizing version... 
+[debug] [2021-06-30T13:23:46.437Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-30T13:23:46.437Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-30T13:23:46.808Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Wed, 30 Jun 2021 13:23:46 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-30T13:23:46.853Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/irina-tech/versions/08ab05e74985a08b?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-06-30T13:23:48.423Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 30 Jun 2021 13:23:48 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-30T13:23:48.426Z] [hosting] finalized version for irina-tech: {"name":"sites/irina-tech/versions/08ab05e74985a08b","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-06-30T13:23:41.241398Z","createUser":{"email":"ikonnova@gmail.com"},"finalizeTime":"2021-06-30T13:23:48.333047Z","finalizeUser":{"email":"ikonnova@gmail.com"}}
+[info] ✔  hosting[irina-tech]: version finalized 
+[info] i  hosting[irina-tech]: releasing new version... 
+[debug] [2021-06-30T13:23:48.430Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/irina-tech/releases?version_name=sites/irina-tech/versions/08ab05e74985a08b  
+ {"message":null}
+[debug] [2021-06-30T13:23:49.968Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 30 Jun 2021 13:23:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-30T13:23:49.969Z] [hosting] release: {"name":"sites/irina-tech/releases/1625059429285119","version":{"name":"sites/irina-tech/versions/08ab05e74985a08b","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-06-30T13:23:41.241398Z","createUser":{"email":"ikonnova@gmail.com"},"finalizeTime":"2021-06-30T13:23:48.333047Z","finalizeUser":{"email":"ikonnova@gmail.com"}},"type":"DEPLOY","releaseTime":"2021-06-30T13:23:49.285119201Z","releaseUser":{"email":"ikonnova@gmail.com"}}
+[info] ✔  hosting[irina-tech]: release complete 
+[info] 
+[info] ✔  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/irina-tech/overview
+[info] Hosting URL: https://irina-tech.web.app
