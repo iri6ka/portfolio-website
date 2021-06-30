@@ -35,13 +35,7 @@ export default function Contact() {
                     <Form action="#" className="contact-form" onSubmit={sendEmail}>
                         <FormH1>Send me a line if you want to have a chat about your upcoming project - I will come back to you as soon as I can!</FormH1>
                         <FormLabel>Name</FormLabel>
-                        <FormInput type="text" className="form-control" name="firstName" required />
-                        {/* <FormLabel>Last Name </FormLabel>
-                        <FormInput type="text" className="form-control" name="lastName" required /> */}
-                        {/* <FormLabel>Company</FormLabel>
-                        <FormInput type="text" className="form-control" name="company" /> */}
-                        {/* <FormLabel>Position</FormLabel>
-                        <FormInput type="text" className="form-control" name="position" /> */}
+                        <FormInput type="text" className="form-control" name="name" required />
                         <FormLabel>Email</FormLabel>
                         <FormInput type="text" className="form-control" name="email" required />
                         <FormLabel>Phone Number</FormLabel>
