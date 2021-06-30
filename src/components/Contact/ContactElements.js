@@ -18,7 +18,6 @@ export const Container = styled.div`
 `
 
 export const FormWrap = styled.div`
-
     height: 100%auto;
     display: flex;
     flex-direction: column;
@@ -44,7 +43,6 @@ export const FormWrap = styled.div`
 
 export const FormContent = styled.div`
     margin-top: 120px;
-
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -67,9 +65,13 @@ export const Form = styled.form`
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.9);
 
-    @media screen and (max-width: 400px){
+    @media screen and (max-width: 460px){
         padding: 32px 32px;
-        max-width: 320px;
+        max-width:250px;
+    }
+    @media screen and (max-width: 375px){
+        padding: 32px 32px;
+        max-width:200px;
     }
 `;
 
@@ -79,6 +81,10 @@ export const FormH1 = styled.h1`
     font-size: 20px;
     font-weight: 400;
     text-align: center;
+
+    @media screen and (max-width: 400px) {
+        width: 90%;
+    }
 `;
 
 export const FormLabel = styled.label`
@@ -92,6 +98,15 @@ export const FormInput = styled.input`
     margin-bottom: 32px;
     border: none;
     border-radius: 4px;
+
+    @media screen and (max-width: 460px){
+        max-width:220px;
+
+    }
+
+    @media screen and (max-width: 375px){
+        max-width:170px;
+    }
 `;
 
 export const FormButton = styled.button`
@@ -113,10 +128,22 @@ export const FormButton = styled.button`
 
 export const FormText = styled.textarea`
     text-align: left;
-    min-width: 400px;
-    max-width: 400px;
+    width: 400px;
     border-radius: 4px;
 
     color: #000;
     font-size: 14px;
+
+    @media screen and (max-width: 460px){
+        min-width:220px;
+        max-width: 242px;
+
+    }
+
+    @media screen and (max-width: 375px){
+        max-width:170px;
+    }
+    @media screen and (max-width: 350px){
+        max-width:170px;
+    }
 `;

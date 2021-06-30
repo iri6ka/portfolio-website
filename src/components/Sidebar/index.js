@@ -18,7 +18,7 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLink to="projects" onClick={toggle}>Projects</SidebarLink>
                 </SidebarMenu> */}
                 <SidebarMenu>
-                    <SidebarLink path="/contact-page" exact>Contact</SidebarLink>
+                    <SidebarLink to="contact" onClick={toggle}>Contact</SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
                     <SidebarRoute to="/resume">Resume</SidebarRoute>

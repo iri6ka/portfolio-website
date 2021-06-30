@@ -3,7 +3,7 @@ import img from '../../images/background.png'
 
 // font-family: 'Ruda', sans-serif;
 
-export const SkillsContainer = styled.section`
+export const SkillsContainer = styled.div`
     height: 980px;
     offset: 100px;
     display: flex;
@@ -47,7 +47,7 @@ export const SkillsWrapper = styled.div`
 
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
-        padding: 0 20px;
+        /* padding: 0 20px; */
     }
 `
 
@@ -66,12 +66,12 @@ export const SkillsCard = styled.div`
 
 
     @media screen and (max-width: 768px) {
-        width: 500px;
+        width: 85%;
         height: 450px;
 
     }
     @media screen and (max-width: 540px) {
-        width: 400px;
+        width: 80%;
         height: 400px;
 
     }

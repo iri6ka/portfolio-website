@@ -45,21 +45,23 @@ const Navbar = ({toggle}) => {
 
                         <NavItem>
                             <Link to="about" activeClass="active"
-                            smooth={true} duration={500} spy={true} exact={true} offset={-80}
+                            smooth={true} duration={500} spy={true} offset={-80}
                             >About</Link>
                         </NavItem> 
                         <NavItem>
                             <Link to="skills" activeClass="active"
-                            smooth={true} duration={500} spy={true} exact={true} offset={-80}
+                            smooth={true} duration={500} spy={true} offset={-80}
                             >Skills</Link>
                         </NavItem> 
                         {/* <NavItem>
                             <Link to="projects" onClick={toggle}
-                            smooth={true} duration={500} spy={true} exact={true} offset={-80}
+                            smooth={true} duration={500} spy={true} offset={-80}
                             >Projects</Link>
                         </NavItem> */}
                         <NavItem>
-                            <Link to="/contact-page">Contact</Link>
+                            <Link to="contact" activeClass="active"
+                            smooth={true} duration={500} spy={true} offset={-80}
+                            >Contact</Link>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
