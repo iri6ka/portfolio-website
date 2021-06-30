@@ -3,10 +3,10 @@ import React, {useState} from 'react';
 // import Poster from '../../images/poster.png';
 import { HeroContainer, ParticleStyle, HeroContent, HeroH1, HeroP, HeroBtnWrapper, Arrow, Arrows } from './HeroElements';
 import Particle from '../../components/Particle';
-import { Button } from '../ButtonElements'
+import { Button } from '../ButtonElements';
 
 
-const HeroSection = () => {
+const HeroSection = (primary) => {
     const [hover, setHover] = useState(false)
 
     const onHover = () => {
@@ -25,11 +25,13 @@ const HeroSection = () => {
                 <HeroBtnWrapper>
                     <Button 
                         to="contact" 
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        offset={-80}
                         onMouseEnter={onHover} 
                         onMouseLeave={onHover}
-
-                        primary="true"
-                        dark="true"
+                        primary={primary ? 1 : 0}
                     >Let's Connect { hover ? <Arrows /> : <Arrow/>}
                     </Button>
                 </HeroBtnWrapper>

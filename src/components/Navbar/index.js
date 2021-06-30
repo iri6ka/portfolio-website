@@ -8,13 +8,10 @@ import {
     MobileIcon, 
     NavMenu, 
     NavItem, 
-    NavLinks,
+    Link,
     NavBtn,
     NavBtnLink
 } from './NavbarElements'
-// import Resume from '../Resume'
-
-import IKResume from '../../files/IrinaKonnovaResume.pdf'
 
 const Navbar = ({toggle}) => {
 
@@ -45,28 +42,30 @@ const Navbar = ({toggle}) => {
                         <HiMenuAlt4 />
                     </MobileIcon>
                     <NavMenu>
-                        <NavItem>
-                            <NavLinks to="about" 
-                            smooth={true} duration={500} spy={true} exact={true} offset={-80}
-                            >About</NavLinks>
-                         </NavItem> 
-                        <NavItem>
-                            <NavLinks to="skills"
-                            smooth={true} duration={500} spy={true} exact={true} offset={-80}
-                            >Skills</NavLinks>
-                        </NavItem> 
-                        <NavItem>
-                            <NavLinks to="projects"
-                            smooth={true} duration={500} spy={true} exact={true} offset={-80}
-                            >Projects</NavLinks>
-                        </NavItem>
 
                         <NavItem>
-                            <NavLinks to="contact">Contact</NavLinks>
+                            <Link to="about" activeClass="active"
+                            smooth={true} duration={500} spy={true} offset={-80}
+                            >About</Link>
+                        </NavItem> 
+                        <NavItem>
+                            <Link to="skills" activeClass="active"
+                            smooth={true} duration={500} spy={true} offset={-80}
+                            >Skills</Link>
+                        </NavItem> 
+                        {/* <NavItem>
+                            <Link to="projects" onClick={toggle}
+                            smooth={true} duration={500} spy={true} offset={-80}
+                            >Projects</Link>
+                        </NavItem> */}
+                        <NavItem>
+                            <Link to="contact" activeClass="active"
+                            smooth={true} duration={500} spy={true} offset={-80}
+                            >Contact</Link>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/resume" scr={IKResume} target="_blank" area-label="Resume">Resume</NavBtnLink>
+                        <NavBtnLink to="/resume" target="_blank" area-label="Resume">Resume</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

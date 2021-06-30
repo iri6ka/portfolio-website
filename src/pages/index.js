@@ -2,9 +2,10 @@ import React, {useState} from 'react';
 import Navbar from '../components/Navbar/index';
 import Sidebar from '../components/Sidebar/index';
 import HeroSection from '../components/HeroSection';
-import AboutSection from '../components/AboutSection';
+import About from '../components/AboutSection';
 import {objOne} from '../components/AboutSection/Data';
 import Skills from '../components/Skills';
+import ContactPage from './contact-page';
 import Footer from '../components/Footer';
 
 
@@ -14,17 +15,16 @@ const Home = () => {
     const toggle = () => {
         setIsOpen(!isOpen)
     }
-
-
     return (
-        <React.Fragment>
+        <>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <HeroSection />
-            <AboutSection {...objOne}/>
+            <About {...objOne}/>
             <Skills />
+            <ContactPage />
             <Footer />
-        </React.Fragment>
+        </>
     )
 }
 

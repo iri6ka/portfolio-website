@@ -13,8 +13,6 @@ import {
     SkillsP, 
 } from './SkillsElements'
 
-
-
 const Skills = (lightBg) => {
     return (
         <SkillsContainer lightBg={!lightBg} id='skills'>
