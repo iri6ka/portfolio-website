@@ -10,7 +10,7 @@ export const objOne = {
     In the time when I am not working and coding, I am juggling a life of a mum, wife and a dog owner. My hobbies include photography, fitness, snowboarding. Can't live without coffee ;-)\n 
     Feel free to explore my projects and contact me if you want to build something exciting together.`,
     buttonLabel: "Have a look at my CV",
-    imgStart: true,
+    imgStart: false,
     // img: require('../../images/svg-3.svg'), 
     alt: 'Girl with a laptop',
     dark: false,

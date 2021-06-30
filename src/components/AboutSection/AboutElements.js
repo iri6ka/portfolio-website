@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const AboutContainer = styled.div`
+export const AboutContainer = styled.section`
     color: #fff;
     position: relative;
     font-family: 'Ruda', sans-serif;
@@ -66,7 +66,7 @@ export const TopLine = styled.p`
 `
 
 export const Heading = styled.h1`
-    color: #fff
+    color: #fff;
     margin-bottom: 24px;
     font-size: 48px;
     line-height: 1.1;
@@ -86,8 +86,8 @@ export const Subtitle = styled.p`
     color: ${({darkText}) => (darkText ? '#010101' : '#fff')}
 `
 export const BtnWrap = styled.div`
-display: flex;
-justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
 `
 
 export const ImgWrap = styled.div`
