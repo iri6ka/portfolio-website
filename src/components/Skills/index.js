@@ -5,7 +5,6 @@ import Icon3 from '../../images/svg-3.svg';
 import {
     SkillsContainer, 
     SkillsWrapper,
-    // SkillsIcon,
     SkillsH1, 
     SkillsH2, 
     Img,

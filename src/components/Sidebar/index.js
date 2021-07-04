@@ -9,16 +9,16 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="about" onClick={toggle}>About</SidebarLink>
+                    <SidebarLink to="about" onClick={toggle} xact={true.toString()} smooth={true} duration={500} spy={true} offset={-80}>About</SidebarLink>
                 </SidebarMenu>
                 <SidebarMenu>
-                    <SidebarLink to="skills" onClick={toggle}>Skills</SidebarLink>
+                    <SidebarLink to="skills" onClick={toggle} exact={true.toString()} smooth={true} duration={500} spy={true} >Skills</SidebarLink>
                 </SidebarMenu>
-                {/* <SidebarMenu>
-                    <SidebarLink to="projects" onClick={toggle}>Projects</SidebarLink>
-                </SidebarMenu> */}
                 <SidebarMenu>
-                    <SidebarLink to="contact" onClick={toggle}>Contact</SidebarLink>
+                    <SidebarLink to="projects" onClick={toggle} exact={true.toString()} smooth={true} duration={500} spy={true}>Projects</SidebarLink>
+                </SidebarMenu>
+                <SidebarMenu>
+                    <SidebarLink to="contact" onClick={toggle} exact={true.toString()} smooth={true} duration={500} spy={true} >Contact</SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
                     <SidebarRoute to="/resume" target="_blank">Resume</SidebarRoute>

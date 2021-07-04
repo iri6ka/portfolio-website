@@ -4,7 +4,7 @@ import img from '../../images/background.png'
 // font-family: 'Ruda', sans-serif;
 
 export const SkillsContainer = styled.div`
-    height: 980px;
+    height: 890px;
     offset: 100px;
     display: flex;
     flex-direction: column;
@@ -17,25 +17,25 @@ export const SkillsContainer = styled.div`
 
      }
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 560px){
         /* max-width: 300px; */
         /* width: 100%; */
 
-        height: 2100px;
+        height: 1800px;
     }
 
     @media screen and (max-width: 480px){
         /* max-width: 300px; */
         /* width: 100%; */
 
-        height: 2200px;
+        height: 2300px;
     }
 
     @media screen and (max-width: 320px){
         /* max-width: 300px; */
         /* width: 100%; */
 
-        height: 2300px;
+        height: 2400px;
     }
 `
 
@@ -73,13 +73,13 @@ export const SkillsCard = styled.div`
 
 
     @media screen and (max-width: 768px) {
-        width: 85%;
+        width: 90%;
         height: 450px;
 
     }
     @media screen and (max-width: 540px) {
         width: 80%;
-        height: 400px;
+        height: 420px;
 
     }
 
@@ -90,12 +90,18 @@ export const SkillsCard = styled.div`
 
     @media screen and (max-width: 320px){
         width: 150px;
+        height: 680px;
+    }
+    @media screen and (max-width: 280px){
+        width: 150px;
+        padding: 15px;
+
         height: 620px;
     }
 
     &:hover {
         transform: scale(1.02);
-        transition: alll 0.2 ease-in-out;
+        transition: all 0.2 ease-in-out;
         cursor: pointer;
     };
 `

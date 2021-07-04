@@ -24,6 +24,13 @@ export const AboutWrapper = styled.div`
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+
+    @media screen and (max-width: 320px){
+        height: 960px;
+    }
+    @media screen and (max-width: 280px){
+        height: 1100px;
+    }
 `
 
 export const AboutRow = styled.div`
@@ -45,7 +52,6 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
-
     padding: 0 15px;
     grid-area: col2;
 `
@@ -107,7 +113,7 @@ export const BtnLink = styled(LinkRouter)`
     border-radius: 50px;
     background: #2E1518;
     white-space: nowrap;
-    padding: 16px 64px;
+    padding: 16px 32px;
     color: #fff;
     font-size: 16px;
     outline: none;
@@ -117,6 +123,7 @@ export const BtnLink = styled(LinkRouter)`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     font-weight: bold;
+
 
     &:hover{
         transition: all 0.2s ease-in-out;
