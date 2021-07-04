@@ -138,15 +138,22 @@ export const ProjectsH1 = styled.h1`
     font-family: 'Ruda', sans-serif;
     color: #fff; 
     margin-bottom: 54px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
 
 
     @media screen and (max-width: 600px){
-        /* margin-top: 80px; */
+        flex-direction: column;
+        justify-content: center;
     }
 
 
     @media screen and (max-width: 480px){
-        font-size: 2rem;
+        font-size: 1.8rem;
+        align-items: center;
+
     }
 `;
 
@@ -159,6 +166,12 @@ export const ProjectsH3 = styled.h3`
     font-size: 1.5rem;
     margin-bottom: 8px;
     text-align: center;
+
+    @media screen and (max-width: 480px){
+        flex-direction: column;
+        text-align: center;
+        max-width: 460px;
+    }
 `
 
 
