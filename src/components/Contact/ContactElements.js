@@ -25,7 +25,11 @@ export const FormWrap = styled.div`
 
     @media screen and (max-width: 400px) {
         height: 80%;
-    }`;
+    }
+    @media screen and (max-width: 280px) {
+        height: 80%;
+    }
+    `;
 // `
 // export const Icon = styled(Link)`
 //     margin-left: 32px;
@@ -51,6 +55,9 @@ export const FormContent = styled.div`
     @media screen and (max-width: 480px) {
         padding: 10px;
     }
+    @media screen and (max-width: 280px) {
+        padding: 5px;
+    }
 `;
 
 export const Form = styled.form`
@@ -72,6 +79,10 @@ export const Form = styled.form`
     @media screen and (max-width: 375px){
         padding: 32px 32px;
         max-width:200px;
+    }
+    @media screen and (max-width: 280px){
+        padding: 32px 32px;
+        max-width:180px;
     }
 `;
 
@@ -107,6 +118,9 @@ export const FormInput = styled.input`
     @media screen and (max-width: 375px){
         max-width:170px;
     }
+    @media screen and (max-width: 280px) {
+        max-width:150px;
+    }
 `;
 
 export const FormButton = styled.button`
@@ -118,6 +132,10 @@ export const FormButton = styled.button`
     font-size: 20px;
     cursor: pointer;
     margin-top: 60px;
+
+    @media screen and (max-width: 280px) {
+        max-width:80px;
+    }
     
     &:hover {
         transition: all 0.2 ease-in-out;
@@ -145,5 +163,10 @@ export const FormText = styled.textarea`
     }
     @media screen and (max-width: 350px){
         max-width:170px;
+    }
+
+    @media screen and (max-width: 280px) {
+        max-width:130px;    
+        font-size: 12px;
     }
 `;

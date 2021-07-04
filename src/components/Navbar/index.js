@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+// import { FaTruckMonster } from 'react-icons/fa';
 import {HiMenuAlt4} from "react-icons/hi";
 import {animateScroll as scroll} from 'react-scroll';
 import {
@@ -48,18 +49,18 @@ const Navbar = ({toggle}) => {
                             >About</Link>
                         </NavItem> 
                         <NavItem>
-                            <Link to="skills" activeClass="active"
-                            smooth={true} duration={500} spy={true} offset={-80}
+                            <Link to="skills" activeClass="active" offset={-80}
+                            smooth={true} duration={500} spy={true}
                             >Skills</Link>
                         </NavItem> 
                         <NavItem>
                         <Link to="projects" activeClass="active"
-                            smooth={true} duration={500} spy={true} offset={-80}
+                            smooth={true} duration={500} spy={true} offset={-80} exact={true.toString()}
                             >Projects</Link>
                         </NavItem>
                         <NavItem>
                             <Link to="contact" activeClass="active"
-                            smooth={true} duration={500} spy={true} offset={-80}
+                            smooth={true} duration={500} spy={true}
                             >Contact</Link>
                         </NavItem>
                     </NavMenu>

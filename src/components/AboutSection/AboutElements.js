@@ -24,6 +24,13 @@ export const AboutWrapper = styled.div`
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+
+    @media screen and (max-width: 320px){
+        height: 960px;
+    }
+    @media screen and (max-width: 280px){
+        height: 1100px;
+    }
 `
 
 export const AboutRow = styled.div`
@@ -106,7 +113,7 @@ export const BtnLink = styled(LinkRouter)`
     border-radius: 50px;
     background: #2E1518;
     white-space: nowrap;
-    padding: 16px 64px;
+    padding: 16px 32px;
     color: #fff;
     font-size: 16px;
     outline: none;
@@ -117,9 +124,6 @@ export const BtnLink = styled(LinkRouter)`
     text-decoration: none;
     font-weight: bold;
 
-    @media scrreen and (max-width: 480px) {
-        padding: 16px 32px;
-    }
 
     &:hover{
         transition: all 0.2s ease-in-out;

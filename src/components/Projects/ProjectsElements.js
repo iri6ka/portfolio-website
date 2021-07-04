@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 
 export const ProjectsContainer = styled.div`
-    height: 2400px;
+    height: 2500px;
     offset: 100px;
     display: flex;
     flex-direction: column;
@@ -12,30 +12,34 @@ export const ProjectsContainer = styled.div`
     background: #44637B;
     
     @media screen and (max-width: 768px) {
-        height: 3600px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        height: 100%;
+
+     }
+     /* @media screen and (max-width: 540px) {
+        height: 9000px;
 
      }
 
     @media screen and (max-width: 600px){
-        /* max-width: 300px; */
-        /* width: 100%; */
-
-        height: 2100px;
+        max-width: 300px;
+        width: 100%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        height: 100%;
     }
 
     @media screen and (max-width: 480px){
-        /* max-width: 300px; */
-        /* width: 100%; */
 
-        height: 2200px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        height: 100%;
     }
 
     @media screen and (max-width: 320px){
-        /* max-width: 300px; */
-        /* width: 100%; */
-
         height: 2300px;
-    }
+    } */
 `
 
 export const ProjectsWrapper = styled.div`
@@ -65,33 +69,36 @@ export const ProjectsCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    height: 650px;
+    height: 690px;
     padding: 30px;
     box-shadow: 0 1px 3px rbga(0,0,0,0.2);
     transition: all 0.2 ease-in-out;
 
-
     @media screen and (max-width: 768px) {
-        width: 90%;
-        height: 600px;
+        width: 600px;
+        height: auto;
 
     }
-    @media screen and (max-width: 560px) {
-        width: 85%;
-        height: 650px;
+    @media screen and (max-width: 540px) {
+        width: 350px;
+        height: auto;
 
     }
 
-    @media screen and (max-width: 520px){
-        width: 70%;
-        height: 700px;
+    @media screen and (max-width: 480px){
+        width: 200px;
+        height: auto;
     }
 
     @media screen and (max-width: 320px){
         width: 150px;
-        height: 620px;
+        height: auto;
     }
 
+    @media screen and (max-width: 320px){
+        width: 120px;
+        height: auto;
+    }
     &:hover {
         transform: scale(1.02);
         transition: all 0.2 ease-in-out;
@@ -103,6 +110,26 @@ export const Img= styled.img`
     height: 250px;
     width: 400px;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 768px) {
+        width: 600px;
+        height: 352px;
+
+     }
+
+    @media screen and (max-width: 540px) {
+        width: 320px;
+        height: 188px;
+    }
+    @media screen and (max-width: 480px){
+        width: 188px;
+        height: auto;
+    }
+
+    @media screen and (max-width: 320px){
+        width: 150px;
+        height: auto;
+    }
 `;
 
 
@@ -170,6 +197,40 @@ export const BtnLink = styled.a`
         background:#DA7B93;
         color: #000;
         ;
+    }
+
+    @media screen and (max-width: 320px){
+        flex-direction: column;
+    }
+`
+
+export const BtnWrapper = styled.div`
+max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    grid-gap: 16px;
+    padding: 0 50px;
+
+
+    @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-self: center;
+
+    }
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+    @media screen and (max-width: 540px) {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    @media screen and (max-width: 480px) {
+        grid-template-columns: 1fr;
+        align-items: center;
     }
 `
 // export const ImgWrap = styled.div`
