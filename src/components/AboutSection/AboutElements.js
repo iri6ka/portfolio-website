@@ -45,7 +45,6 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
-
     padding: 0 15px;
     grid-area: col2;
 `
@@ -117,6 +116,10 @@ export const BtnLink = styled(LinkRouter)`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     font-weight: bold;
+
+    @media scrreen and (max-width: 480px) {
+        padding: 16px 32px;
+    }
 
     &:hover{
         transition: all 0.2s ease-in-out;

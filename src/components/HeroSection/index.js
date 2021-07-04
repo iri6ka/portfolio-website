@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-// import Space from '../../videos/space.mp4';
-// import Poster from '../../images/poster.png';
 import { HeroContainer, ParticleStyle, HeroContent, HeroH1, HeroP, HeroBtnWrapper, Arrow, Arrows } from './HeroElements';
 import Particle from '../../components/Particle';
 import { Button } from '../ButtonElements';

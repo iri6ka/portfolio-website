@@ -42,7 +42,6 @@ const Navbar = ({toggle}) => {
                         <HiMenuAlt4 />
                     </MobileIcon>
                     <NavMenu>
-
                         <NavItem>
                             <Link to="about" activeClass="active"
                             smooth={true} duration={500} spy={true} offset={-80}
@@ -53,11 +52,11 @@ const Navbar = ({toggle}) => {
                             smooth={true} duration={500} spy={true} offset={-80}
                             >Skills</Link>
                         </NavItem> 
-                        {/* <NavItem>
-                            <Link to="projects" onClick={toggle}
+                        <NavItem>
+                        <Link to="projects" activeClass="active"
                             smooth={true} duration={500} spy={true} offset={-80}
                             >Projects</Link>
-                        </NavItem> */}
+                        </NavItem>
                         <NavItem>
                             <Link to="contact" activeClass="active"
                             smooth={true} duration={500} spy={true} offset={-80}
