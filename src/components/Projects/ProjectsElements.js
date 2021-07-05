@@ -11,16 +11,18 @@ export const ProjectsContainer = styled.div`
     align-items: center;
     background: #44637B;
     width: 100vw;
-    @media screen and (max-width: 768px) {
+
+    @media screen and (max-width: 1200px) {
         padding-top: 80px;
         padding-bottom: 80px;
         height: 100%;
 
      }
+
     `
 
 export const ProjectsWrapper = styled.div`
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -28,14 +30,15 @@ export const ProjectsWrapper = styled.div`
     grid-gap: 16px;
     padding: 0 50px;
 
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: 1fr;
+
+    }
+
     @media screen and (max-width: 800px) {
         grid-template-columns: 1fr;
     }
 
-    @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr;
-        /* padding: 0 20px; */
-    }
 `
 
 export const ProjectsCard = styled.div`
@@ -46,36 +49,57 @@ export const ProjectsCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    height: 690px;
+    height: 680px;
     padding: 30px;
     box-shadow: 0 1px 3px rbga(0,0,0,0.2);
     transition: all 0.2 ease-in-out;
 
-    @media screen and (max-width: 768px) {
-        width: 600px;
+    @media screen and (max-width: 1200px) {
+        width: 90%; 
         height: auto;
 
     }
+
+    @media screen and (max-width: 850px) {
+        width: 90%; 
+
+    }
+    @media screen and (max-width: 960px) {
+        width: 90%; 
+
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 90%;
+
+    }
+    @media screen and (max-width: 600px) {
+        width: 80%;
+
+    }
     @media screen and (max-width: 540px) {
-        width: 350px;
-        height: auto;
+        width: 85%;
 
     }
 
     @media screen and (max-width: 480px){
+        width: 280px;
+    }
+
+    @media screen and (max-width: 411px){
         width: 200px;
-        height: auto;
     }
 
     @media screen and (max-width: 320px){
         width: 150px;
-        height: auto;
     }
 
-    @media screen and (max-width: 320px){
-        width: 120px;
-        height: auto;
+
+    @media screen and (max-width: 280px){
+        width: 150px;
+        padding: 15px;
     }
+
     &:hover {
         transform: scale(1.02);
         transition: all 0.2 ease-in-out;
@@ -87,12 +111,23 @@ export const Img= styled.img`
     height: 250px;
     width: 400px;
     margin-bottom: 10px;
+    
+    @media screen and (max-width: 1200px) {
+        width: 750px;
+        height: 441px;
+
+     }
 
     @media screen and (max-width: 768px) {
         width: 600px;
         height: 352px;
 
      }
+
+    @media screen and (max-width: 600px) {
+        width: 400px;
+        height: 235px;
+    }
 
     @media screen and (max-width: 540px) {
         width: 320px;
