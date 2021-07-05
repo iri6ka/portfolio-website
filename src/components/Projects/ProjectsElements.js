@@ -17,30 +17,7 @@ export const ProjectsContainer = styled.div`
         height: 100%;
 
      }
-     /* @media screen and (max-width: 540px) {
-        height: 9000px;
-
-     }
-
-    @media screen and (max-width: 600px){
-        max-width: 300px;
-        width: 100%;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        height: 100%;
-    }
-
-    @media screen and (max-width: 480px){
-
-        padding-top: 80px;
-        padding-bottom: 80px;
-        height: 100%;
-    }
-
-    @media screen and (max-width: 320px){
-        height: 2300px;
-    } */
-`
+    `
 
 export const ProjectsWrapper = styled.div`
     max-width: 1000px;
@@ -168,16 +145,28 @@ export const ProjectsH3 = styled.h3`
     text-align: center;
 
     @media screen and (max-width: 480px){
-        flex-direction: column;
         text-align: center;
         max-width: 460px;
+        font-size: 1.2rem;
+
+    }
+    @media screen and (max-width: 375px){
+        text-align: center;
+        max-width: 300px;
+        font-size: 1rem;
+
+    }
+    @media screen and (max-width: 320px){
+        text-align: center;
+        max-width: 250px;
     }
 `
 
 
-export const ProjectsP = styled.p`
+export const ProjectsP = styled.div`
     font-size: 1rem;
     text-align: center;
+    padding-top: 20px;
 `
 
 export const TopLine = styled.p`
@@ -223,6 +212,7 @@ max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    justify-content: center;
     grid-gap: 16px;
     padding: 0 50px;
 
@@ -230,20 +220,28 @@ max-width: 1000px;
     @media screen and (max-width: 800px) {
         grid-template-columns: 1fr 1fr 1fr;
         align-self: center;
+        justify-content: center;
+
 
     }
 
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
+        justify-content: center;
+
     }
     @media screen and (max-width: 540px) {
         grid-template-columns: 1fr 1fr;
         align-items: center;
+            justify-content: center;
+
     }
     @media screen and (max-width: 480px) {
         grid-template-columns: 1fr;
         align-items: center;
+        justify-content: center;
+
     }
 `
 // export const ImgWrap = styled.div`

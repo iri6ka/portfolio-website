@@ -9,7 +9,7 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="about" onClick={toggle} xact={true.toString()} smooth={true} duration={500} spy={true} offset={-80}>About</SidebarLink>
+                    <SidebarLink to="about" onClick={toggle} xact={true.toString()} smooth={true} duration={500} spy={true}>About</SidebarLink>
                 </SidebarMenu>
                 <SidebarMenu>
                     <SidebarLink to="skills" onClick={toggle} exact={true.toString()} smooth={true} duration={500} spy={true} >Skills</SidebarLink>

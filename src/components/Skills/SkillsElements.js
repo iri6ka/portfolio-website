@@ -5,7 +5,6 @@ import img from '../../images/background.png'
 
 export const SkillsContainer = styled.div`
     height: 890px;
-    offset: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
