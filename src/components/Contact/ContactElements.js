@@ -6,6 +6,7 @@ import img from '../../images/background.png';
 export const Container = styled.div`
     min-height: 1200px;
     background-image: url(${img});
+    width: 100vw;
 
     font-family: 'Ruda', sans-serif;
     position: relative;

@@ -6,6 +6,7 @@ export const AboutContainer = styled.section`
     color: #fff;
     position: relative;
     font-family: 'Ruda', sans-serif;
+    width: 100vw;
 
     background: ${({lightBg}) => (lightBg ? '#fff' : '#44637B')};
 

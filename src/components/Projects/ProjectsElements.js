@@ -10,7 +10,7 @@ export const ProjectsContainer = styled.div`
     justify-content: center;
     align-items: center;
     background: #44637B;
-    
+    width: 100vw;
     @media screen and (max-width: 768px) {
         padding-top: 80px;
         padding-bottom: 80px;

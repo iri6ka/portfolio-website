@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 export const FooterContainer = styled.footer`
     background-color: #44637B;
     font-family: 'Ruda', sans-serif;
+    width: 100vw;
 
 `
 

@@ -7,7 +7,7 @@ export const HeroContainer = styled.main`
     overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-
+    width: 100vw;
 
     :before{
     content: '';
