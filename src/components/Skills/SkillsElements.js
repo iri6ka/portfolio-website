@@ -12,7 +12,7 @@ export const SkillsContainer = styled.div`
     background-image: url(${img});
     width: 100vw;
     @media screen and (max-width: 768px) {
-        height: 2000px;
+        height: 1600px;
 
      }
 
@@ -27,15 +27,16 @@ export const SkillsContainer = styled.div`
         /* max-width: 300px; */
         /* width: 100%; */
 
-        height: 2300px;
+        height: 2100px;
     }
 
     @media screen and (max-width: 320px){
         /* max-width: 300px; */
         /* width: 100%; */
 
-        height: 2400px;
+        height: 2300px;
     }
+
 `
 
 export const SkillsWrapper = styled.div`
@@ -73,29 +74,25 @@ export const SkillsCard = styled.div`
 
     @media screen and (max-width: 768px) {
         width: 90%;
-        height: 450px;
+        height: auto;
 
     }
     @media screen and (max-width: 540px) {
-        width: 80%;
-        height: 420px;
+        width: 85%;
 
     }
 
     @media screen and (max-width: 480px){
         width: 200px;
-        height: 580px;
     }
 
     @media screen and (max-width: 320px){
         width: 150px;
-        height: 680px;
     }
     @media screen and (max-width: 280px){
         width: 150px;
         padding: 15px;
 
-        height: 620px;
     }
 
     &:hover {

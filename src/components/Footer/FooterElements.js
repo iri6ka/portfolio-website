@@ -38,7 +38,8 @@ export const SocialMediaWrap = styled.div`
     justify-content: space-between;
     align-items: center;
     max-width: 1100px;
-    margin: 40px auto 0 auto;
+    margin: 10px auto 0 auto;
+    padding: 20px;
 
     @media screen and (max-width: 820px){
         flex-direction: column;
