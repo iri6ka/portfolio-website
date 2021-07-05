@@ -26,6 +26,10 @@ export const AboutWrapper = styled.div`
     padding: 0 24px;
     justify-content: center;
 
+    @media screen and (max-width: 480px){
+        height: 960px;
+        width: 90%;
+    }
     @media screen and (max-width: 320px){
         height: 960px;
     }
