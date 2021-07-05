@@ -14,14 +14,17 @@ export const SidebarContainer = styled.aside`
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
-    // top: 0;
     opacity: ${({isOpen}) => (isOpen ? '100%' : '0')};
     top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
 `
 
 export const ClosedIcon = styled(HiOutlineX)`
     color: #fff;    
-    /* padding-right: 20px; */
+    padding-right: 5px;
+    
+    @media screen and (max-width: 280px){
+        padding-left: 0;
+    }
 `
 
 export const Icon = styled.div`
@@ -33,6 +36,10 @@ export const Icon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
     color: #000;
+    
+    @media screen and (max-width: 280px){
+        padding-left: 20px;
+    }
 `
 
 export const SidebarWrapper = styled.div`

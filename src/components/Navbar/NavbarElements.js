@@ -43,6 +43,10 @@ export const NavLogo = styled(LinkRouter)`
     font-family: 'Codystar', cursive;
     text-decoration: none;
     color: #fff;
+
+    @media screen and (max-width: 280px) {
+        font-size: 1.2rem;    
+    }
     `
 export const MobileIcon = styled.div`
     padding-top: 4px;
