@@ -20,7 +20,7 @@ export const SidebarContainer = styled.aside`
 
 export const ClosedIcon = styled(HiOutlineX)`
     color: #fff;    
-    padding-right: 5px;
+    /* padding-right: 5px; */
     
     @media screen and (max-width: 280px){
         padding-left: 0;
@@ -38,7 +38,7 @@ export const Icon = styled.div`
     color: #000;
     
     @media screen and (max-width: 280px){
-        padding-left: 20px;
+        /* padding-left: 20px; */
     }
 `
 
