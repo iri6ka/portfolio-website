@@ -11,6 +11,11 @@ export const SkillsContainer = styled.div`
     align-items: center;
     background-image: url(${img});
     width: 100vw;
+
+    @media screen and (max-width: 900px) {
+        height: 1400px;
+
+     }
     @media screen and (max-width: 768px) {
         height: 1600px;
 
@@ -48,8 +53,10 @@ export const SkillsWrapper = styled.div`
     grid-gap: 16px;
     padding: 0 50px;
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 900px) {
         grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
     }
 
     @media screen and (max-width: 768px) {
