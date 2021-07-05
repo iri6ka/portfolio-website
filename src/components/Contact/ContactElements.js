@@ -31,20 +31,7 @@ export const FormWrap = styled.div`
         height: 80%;
     }
     `;
-// `
-// export const Icon = styled(Link)`
-//     margin-left: 32px;
-//     margin-top: 32px;
-//     text-decoration: none;
-//     color: #fff;
-//     font-weight: 700;
-//     font-size: 32px;
 
-//     @media screen and (max-width: 480px){
-//         margin-left: 16px;
-//         margin-top: 8px;
-// }
-// `;
 
 export const FormContent = styled.div`
     margin-top: 120px;
@@ -73,7 +60,7 @@ export const Form = styled.form`
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.9);
 
-    @media screen and (max-width: 460px){
+    @media screen and (max-width: 480px){
         padding: 32px 32px;
         max-width:250px;
     }
@@ -83,7 +70,7 @@ export const Form = styled.form`
     }
     @media screen and (max-width: 280px){
         padding: 32px 32px;
-        max-width:180px;
+        max-width:155px;
     }
 `;
 
@@ -95,7 +82,7 @@ export const FormH1 = styled.h1`
     text-align: center;
 
     @media screen and (max-width: 400px) {
-        width: 90%;
+        width: 100%;
     }
 `;
 
@@ -111,7 +98,7 @@ export const FormInput = styled.input`
     border: none;
     border-radius: 4px;
 
-    @media screen and (max-width: 460px){
+    @media screen and (max-width: 480px){
         max-width:220px;
 
     }
@@ -120,7 +107,7 @@ export const FormInput = styled.input`
         max-width:170px;
     }
     @media screen and (max-width: 280px) {
-        max-width:150px;
+        min-width:120px;    
     }
 `;
 
@@ -153,21 +140,21 @@ export const FormText = styled.textarea`
     color: #000;
     font-size: 14px;
 
-    @media screen and (max-width: 460px){
-        min-width:220px;
+    @media screen and (max-width: 480px){
+        min-width:242px;
         max-width: 242px;
 
     }
 
     @media screen and (max-width: 375px){
-        max-width:170px;
-    }
-    @media screen and (max-width: 350px){
-        max-width:170px;
+        min-width:193px;
+        max-width:193px;
     }
 
+
     @media screen and (max-width: 280px) {
-        max-width:130px;    
+        max-width:150px;
+        min-width:150px;    
         font-size: 12px;
     }
 `;
